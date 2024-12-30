@@ -21,7 +21,6 @@ import org.slf4j.Logger;
 public class PracticeModOne
 {
     // Define mod id in a common place for everything to reference
-    // test change
     public static final String MOD_ID = "practicemodone";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
