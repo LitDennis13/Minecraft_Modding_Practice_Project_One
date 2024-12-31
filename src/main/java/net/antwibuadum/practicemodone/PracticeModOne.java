@@ -1,6 +1,10 @@
 package net.antwibuadum.practicemodone;
 
 import com.mojang.logging.LogUtils;
+import net.antwibuadum.practicemodone.items.ExtraCreativeModeTabs;
+import net.antwibuadum.practicemodone.items.ExtraItems;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -29,6 +33,8 @@ public class PracticeModOne
     {
         IEventBus modEventBus = context.getModEventBus();
 
+        ExtraItems.register(modEventBus);
+        ExtraCreativeModeTabs.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -37,6 +43,7 @@ public class PracticeModOne
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
+
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -48,7 +55,11 @@ public class PracticeModOne
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ExtraItems.SAPPHIRE_OBJECT);
+            event.accept(ExtraItems.RAW_SAPPHIRE_OBJECT);
+            event.accept(ExtraItems.F1_LOGO);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
