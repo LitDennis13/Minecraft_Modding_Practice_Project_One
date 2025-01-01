@@ -1,6 +1,7 @@
 package net.antwibuadum.practicemodone.items;
 
 import net.antwibuadum.practicemodone.PracticeModOne;
+import net.antwibuadum.practicemodone.blocks.ExtraBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -20,6 +21,8 @@ public class ExtraCreativeModeTabs {
                         pOutput.accept(ExtraItems.SAPPHIRE_OBJECT.get());
                         pOutput.accept(ExtraItems.RAW_SAPPHIRE_OBJECT.get());
                         pOutput.accept(ExtraItems.F1_LOGO.get());
+                        pOutput.accept(ExtraBlocks.BLOCK_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraBlocks.RAW_BLOCK_OF_SAPPHIRE.get());
 
                         // Vanilla Item
                         pOutput.accept(Items.EMERALD);

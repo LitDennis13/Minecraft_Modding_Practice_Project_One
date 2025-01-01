@@ -1,6 +1,7 @@
 package net.antwibuadum.practicemodone;
 
 import com.mojang.logging.LogUtils;
+import net.antwibuadum.practicemodone.blocks.ExtraBlocks;
 import net.antwibuadum.practicemodone.items.ExtraCreativeModeTabs;
 import net.antwibuadum.practicemodone.items.ExtraItems;
 import net.minecraft.world.item.CreativeModeTab;
@@ -34,6 +35,10 @@ public class PracticeModOne
         IEventBus modEventBus = context.getModEventBus();
 
         ExtraItems.register(modEventBus);
+
+        ExtraBlocks.register(modEventBus);
+
+        // Extra Items creative mode tab
         ExtraCreativeModeTabs.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
@@ -59,6 +64,13 @@ public class PracticeModOne
             event.accept(ExtraItems.SAPPHIRE_OBJECT);
             event.accept(ExtraItems.RAW_SAPPHIRE_OBJECT);
             event.accept(ExtraItems.F1_LOGO);
+            event.accept(ExtraBlocks.BLOCK_OF_SAPPHIRE);
+            event.accept(ExtraBlocks.RAW_BLOCK_OF_SAPPHIRE);
+        }
+
+        if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ExtraBlocks.BLOCK_OF_SAPPHIRE);
+            event.accept(ExtraBlocks.RAW_BLOCK_OF_SAPPHIRE);
         }
     }
 
