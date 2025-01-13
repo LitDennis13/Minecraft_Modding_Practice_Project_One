@@ -19,6 +19,8 @@ public class ExtraItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> METAL_DETECTOR = EXTRA_ITEMS.register("metal_detector",
             () -> new MetalDetectorItem(new Item.Properties().durability(50)));
+    public static final RegistryObject<Item> STRAWBERRY_FOOD = EXTRA_ITEMS.register("strawberry_food",
+            () -> new Item(new Item.Properties().food(ExtraFood.STRAWBERRY)));
 
 
     public static void register(IEventBus eventBus) {
