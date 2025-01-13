@@ -6,5 +6,10 @@
   "block.practicemodone.block_of_sapphire": "Block of Sapphire",
   "block.practicemodone.raw_block_of_sapphire": "Raw Block of Sapphire",
 
+  "block.practicemodone.block_of_sapphire_ore": "Block of Sapphire Ore",
+  "block.practicemodone.block_of_deepslate_sapphire_ore": "Block of Deepslate Sapphire Ore",
+  "block.practicemodone.block_of_nether_sapphire_ore": "Block of Nether Sapphire Ore",
+  "block.practicemodone.block_of_end_stone_sapphire_ore": "Block of End Stone Sapphire Ore",
+
   "creativetab.extra_stuff": "Added Extra Stuff"
 }
