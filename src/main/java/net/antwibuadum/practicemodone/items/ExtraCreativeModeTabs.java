@@ -21,12 +21,14 @@ public class ExtraCreativeModeTabs {
                         pOutput.accept(ExtraItems.SAPPHIRE_OBJECT.get());
                         pOutput.accept(ExtraItems.RAW_SAPPHIRE_OBJECT.get());
                         pOutput.accept(ExtraItems.F1_LOGO.get());
+                        pOutput.accept(ExtraItems.METAL_DETECTOR.get());
                         pOutput.accept(ExtraBlocks.BLOCK_OF_SAPPHIRE.get());
                         pOutput.accept(ExtraBlocks.RAW_BLOCK_OF_SAPPHIRE.get());
                         pOutput.accept(ExtraBlocks.BLOCK_OF_SAPPHIRE_ORE.get());
                         pOutput.accept(ExtraBlocks.BLOCK_OF_DEEPSLATE_SAPPHIRE_ORE.get());
                         pOutput.accept(ExtraBlocks.BLOCK_OF_NETHER_SAPPHIRE_ORE.get());
                         pOutput.accept(ExtraBlocks.BLOCK_OF_END_STONE_SAPPHIRE_ORE.get());
+
 
                         // Vanilla Item
                         pOutput.accept(Items.EMERALD);

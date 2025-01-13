@@ -64,6 +64,7 @@ public class PracticeModOne
             event.accept(ExtraItems.SAPPHIRE_OBJECT);
             event.accept(ExtraItems.RAW_SAPPHIRE_OBJECT);
             event.accept(ExtraItems.F1_LOGO);
+            event.accept(ExtraItems.METAL_DETECTOR);
             event.accept(ExtraBlocks.BLOCK_OF_SAPPHIRE);
             event.accept(ExtraBlocks.RAW_BLOCK_OF_SAPPHIRE);
             event.accept(ExtraBlocks.BLOCK_OF_SAPPHIRE_ORE);

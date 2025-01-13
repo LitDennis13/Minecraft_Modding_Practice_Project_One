@@ -1,6 +1,7 @@
 package net.antwibuadum.practicemodone.items;
 
 import net.antwibuadum.practicemodone.PracticeModOne;
+import net.antwibuadum.practicemodone.items.functional.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -16,6 +17,9 @@ public class ExtraItems {
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> F1_LOGO = EXTRA_ITEMS.register("formula_one_logo",
             () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> METAL_DETECTOR = EXTRA_ITEMS.register("metal_detector",
+            () -> new MetalDetectorItem(new Item.Properties().durability(50)));
+
 
     public static void register(IEventBus eventBus) {
         EXTRA_ITEMS.register(eventBus);
