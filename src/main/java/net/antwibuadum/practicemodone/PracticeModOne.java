@@ -71,6 +71,7 @@ public class PracticeModOne
             event.accept(ExtraBlocks.BLOCK_OF_DEEPSLATE_SAPPHIRE_ORE);
             event.accept(ExtraBlocks.BLOCK_OF_NETHER_SAPPHIRE_ORE);
             event.accept(ExtraBlocks.BLOCK_OF_END_STONE_SAPPHIRE_ORE);
+            event.accept(ExtraBlocks.BLOCK_OF_SOUND);
         }
 
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
