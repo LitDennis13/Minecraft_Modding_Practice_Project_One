@@ -30,6 +30,7 @@ public class ExtraCreativeModeTabs {
                         pOutput.accept(ExtraBlocks.BLOCK_OF_END_STONE_SAPPHIRE_ORE.get());
                         pOutput.accept(ExtraBlocks.BLOCK_OF_SOUND.get());
                         pOutput.accept(ExtraItems.STRAWBERRY_FOOD.get());
+                        pOutput.accept(ExtraItems.PINE_CONE_OBJECT.get());
 
 
                         // Vanilla Item

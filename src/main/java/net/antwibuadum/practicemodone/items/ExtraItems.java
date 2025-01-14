@@ -1,6 +1,7 @@
 package net.antwibuadum.practicemodone.items;
 
 import net.antwibuadum.practicemodone.PracticeModOne;
+import net.antwibuadum.practicemodone.items.functional.FuelItem;
 import net.antwibuadum.practicemodone.items.functional.MetalDetectorItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,6 +22,8 @@ public class ExtraItems {
             () -> new MetalDetectorItem(new Item.Properties().durability(50)));
     public static final RegistryObject<Item> STRAWBERRY_FOOD = EXTRA_ITEMS.register("strawberry_food",
             () -> new Item(new Item.Properties().food(ExtraFood.STRAWBERRY)));
+    public static final RegistryObject<Item> PINE_CONE_OBJECT = EXTRA_ITEMS.register("pine_cone",
+            () -> new FuelItem(new Item.Properties(), 10));
 
 
     public static void register(IEventBus eventBus) {
