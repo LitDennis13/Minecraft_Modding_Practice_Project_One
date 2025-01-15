@@ -19,7 +19,7 @@ public class ExtraItems {
     public static final RegistryObject<Item> F1_LOGO = EXTRA_ITEMS.register("formula_one_logo",
             () -> new Item(new Item.Properties()));
     public static final RegistryObject<Item> METAL_DETECTOR = EXTRA_ITEMS.register("metal_detector",
-            () -> new MetalDetectorItem(new Item.Properties().durability(50)));
+            () -> new MetalDetectorItem(new Item.Properties().durability(25)));
     public static final RegistryObject<Item> STRAWBERRY_FOOD = EXTRA_ITEMS.register("strawberry_food",
             () -> new Item(new Item.Properties().food(ExtraFood.STRAWBERRY)));
     public static final RegistryObject<Item> PINE_CONE_OBJECT = EXTRA_ITEMS.register("pine_cone",

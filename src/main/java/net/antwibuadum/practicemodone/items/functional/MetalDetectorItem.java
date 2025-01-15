@@ -1,6 +1,7 @@
 package net.antwibuadum.practicemodone.items.functional;
 
 import net.antwibuadum.practicemodone.blocks.ExtraBlocks;
+import net.antwibuadum.practicemodone.util.TagsClass;
 import net.minecraft.client.resources.language.I18n;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -62,8 +63,9 @@ public class MetalDetectorItem extends Item {
     }
 
     private boolean isNotableBlock(BlockState state) {
-        return state.is(Blocks.IRON_ORE) || state.is(Blocks.COPPER_ORE) || state.is(ExtraBlocks.RAW_BLOCK_OF_SAPPHIRE.get())
-                || state.is(ExtraBlocks.BLOCK_OF_SAPPHIRE_ORE.get()) || state.is(ExtraBlocks.BLOCK_OF_DEEPSLATE_SAPPHIRE_ORE.get())
-                || state.is(ExtraBlocks.BLOCK_OF_NETHER_SAPPHIRE_ORE.get()) || state.is(ExtraBlocks.BLOCK_OF_END_STONE_SAPPHIRE_ORE.get());
+        // return state.is(Blocks.IRON_ORE) || state.is(Blocks.COPPER_ORE) || state.is(ExtraBlocks.RAW_BLOCK_OF_SAPPHIRE.get())
+                // || state.is(ExtraBlocks.BLOCK_OF_SAPPHIRE_ORE.get()) || state.is(ExtraBlocks.BLOCK_OF_DEEPSLATE_SAPPHIRE_ORE.get())
+                // || state.is(ExtraBlocks.BLOCK_OF_NETHER_SAPPHIRE_ORE.get()) || state.is(ExtraBlocks.BLOCK_OF_END_STONE_SAPPHIRE_ORE.get());
+    return state.is(TagsClass.Blocks.METAL_DETECTOR_NOTABLES);
     }
 }
