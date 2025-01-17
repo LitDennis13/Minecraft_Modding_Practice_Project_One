@@ -23,7 +23,7 @@ public class ExtraItems {
     public static final RegistryObject<Item> STRAWBERRY_FOOD = EXTRA_ITEMS.register("strawberry_food",
             () -> new Item(new Item.Properties().food(ExtraFood.STRAWBERRY)));
     public static final RegistryObject<Item> PINE_CONE_OBJECT = EXTRA_ITEMS.register("pine_cone",
-            () -> new FuelItem(new Item.Properties(), 10));
+            () -> new FuelItem(new Item.Properties(), 16));
 
 
     public static void register(IEventBus eventBus) {
