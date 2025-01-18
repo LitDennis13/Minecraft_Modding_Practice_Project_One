@@ -28,13 +28,24 @@ public class ExtraCreativeModeTabs {
                         pOutput.accept(ExtraBlocks.BLOCK_OF_DEEPSLATE_SAPPHIRE_ORE.get());
                         pOutput.accept(ExtraBlocks.BLOCK_OF_NETHER_SAPPHIRE_ORE.get());
                         pOutput.accept(ExtraBlocks.BLOCK_OF_END_STONE_SAPPHIRE_ORE.get());
+                        pOutput.accept(ExtraBlocks.STAIRS_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraBlocks.SLAB_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraBlocks.BUTTON_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraBlocks.PRESSURE_PLATE_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraBlocks.FENCE_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraBlocks.FENCE_GATE_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraBlocks.WALL_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraBlocks.DOOR_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraBlocks.TRAP_DOOR_OF_SAPPHIRE.get());
                         pOutput.accept(ExtraBlocks.BLOCK_OF_SOUND.get());
                         pOutput.accept(ExtraItems.STRAWBERRY_FOOD.get());
                         pOutput.accept(ExtraItems.PINE_CONE_OBJECT.get());
 
 
+
                         // Vanilla Item
                         pOutput.accept(Items.EMERALD);
+                        pOutput.accept(Items.GRASS_BLOCK);
                     })
                     .build());
 

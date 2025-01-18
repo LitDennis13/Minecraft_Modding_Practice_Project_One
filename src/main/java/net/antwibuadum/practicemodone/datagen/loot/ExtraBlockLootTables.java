@@ -39,6 +39,21 @@ public class ExtraBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(ExtraBlocks.BLOCK_OF_NETHER_SAPPHIRE_ORE.get(), ExtraItems.RAW_SAPPHIRE_OBJECT.get()));
         this.add(ExtraBlocks.BLOCK_OF_END_STONE_SAPPHIRE_ORE.get(),
                 block -> createCopperLikeOreDrops(ExtraBlocks.BLOCK_OF_END_STONE_SAPPHIRE_ORE.get(), ExtraItems.RAW_SAPPHIRE_OBJECT.get()));
+
+        this.dropSelf(ExtraBlocks.STAIRS_OF_SAPPHIRE.get());
+        this.dropSelf(ExtraBlocks.SLAB_OF_SAPPHIRE.get());
+        this.dropSelf(ExtraBlocks.BUTTON_OF_SAPPHIRE.get());
+        this.dropSelf(ExtraBlocks.PRESSURE_PLATE_OF_SAPPHIRE.get());
+        this.dropSelf(ExtraBlocks.FENCE_OF_SAPPHIRE.get());
+        this.dropSelf(ExtraBlocks.FENCE_GATE_OF_SAPPHIRE.get());
+        this.dropSelf(ExtraBlocks.WALL_OF_SAPPHIRE.get());
+        this.dropSelf(ExtraBlocks.TRAP_DOOR_OF_SAPPHIRE.get());
+
+        this.add(ExtraBlocks.SLAB_OF_SAPPHIRE.get(),
+                block -> createSlabItemTable(ExtraBlocks.BLOCK_OF_SAPPHIRE.get()));
+
+        this.add(ExtraBlocks.DOOR_OF_SAPPHIRE.get(),
+                block -> createDoorTable(ExtraBlocks.DOOR_OF_SAPPHIRE.get()));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

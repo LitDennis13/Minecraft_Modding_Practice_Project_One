@@ -18,5 +18,15 @@
   "block.practicemodone.block_of_nether_sapphire_ore": "Block of Nether Sapphire Ore",
   "block.practicemodone.block_of_end_stone_sapphire_ore": "Block of End Stone Sapphire Ore",
 
+  "block.practicemodone.stairs_of_sapphire": "Stairs of Sapphire",
+  "block.practicemodone.slab_of_sapphire": "Slab of Sapphire",
+  "block.practicemodone.button_of_sapphire": "Button of Sapphire",
+  "block.practicemodone.pressure_plate_of_sapphire": "Pressure Plate of Sapphire",
+  "block.practicemodone.fence_of_sapphire": "Fence of Sapphire",
+  "block.practicemodone.fence_gate_of_sapphire": "Fence Gate of Sapphire",
+  "block.practicemodone.wall_of_sapphire": "Wall of Sapphire",
+  "block.practicemodone.door_of_sapphire": "Door of Sapphire",
+  "block.practicemodone.trap_door_of_sapphire": "Trap Door of Sapphire",
+
   "creativetab.extra_stuff": "Added Extra Stuff"
 }

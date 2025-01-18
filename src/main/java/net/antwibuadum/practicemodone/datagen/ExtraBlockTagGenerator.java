@@ -53,5 +53,15 @@ public class ExtraBlockTagGenerator extends BlockTagsProvider {
                         ExtraBlocks.BLOCK_OF_SOUND.get()
                 );
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
+
+
+        this.tag(BlockTags.FENCES)
+                .add(ExtraBlocks.FENCE_OF_SAPPHIRE.get());
+
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ExtraBlocks.FENCE_GATE_OF_SAPPHIRE.get());
+
+        this.tag(BlockTags.WALLS)
+                .add(ExtraBlocks.WALL_OF_SAPPHIRE.get());
     }
 }
