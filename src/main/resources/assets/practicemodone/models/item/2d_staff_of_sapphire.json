@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "practicemodone:item/staff_of_sapphire"
+  }
+}

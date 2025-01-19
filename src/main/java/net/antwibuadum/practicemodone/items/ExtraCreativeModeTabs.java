@@ -40,10 +40,11 @@ public class ExtraCreativeModeTabs {
                         pOutput.accept(ExtraBlocks.BLOCK_OF_SOUND.get());
                         pOutput.accept(ExtraItems.STRAWBERRY_FOOD.get());
                         pOutput.accept(ExtraItems.PINE_CONE_OBJECT.get());
+                        pOutput.accept(ExtraItems.STAFF_OF_SAPPHIRE.get());
 
 
 
-                        // Vanilla Item
+                        // Vanilla Items
                         pOutput.accept(Items.EMERALD);
                         pOutput.accept(Items.GRASS_BLOCK);
                     })

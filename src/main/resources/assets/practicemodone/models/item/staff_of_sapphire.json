@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "practicemodone:item/3d_staff_of_sapphire"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "practicemodone:item/2d_staff_of_sapphire"
+    },
+    "ground": {
+      "parent": "practicemodone:item/2d_staff_of_sapphire"
+    },
+    "fixed": {
+      "parent": "practicemodone:item/2d_staff_of_sapphire"
+    }
+  }
+}

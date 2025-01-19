@@ -25,6 +25,8 @@ public class ExtraItems {
     public static final RegistryObject<Item> PINE_CONE_OBJECT = EXTRA_ITEMS.register("pine_cone",
             () -> new FuelItem(new Item.Properties(), 16));
 
+    public static final RegistryObject<Item> STAFF_OF_SAPPHIRE = EXTRA_ITEMS.register("staff_of_sapphire",
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static void register(IEventBus eventBus) {
         EXTRA_ITEMS.register(eventBus);

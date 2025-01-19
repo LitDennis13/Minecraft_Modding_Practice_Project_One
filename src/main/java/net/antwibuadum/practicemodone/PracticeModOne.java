@@ -83,6 +83,7 @@ public class PracticeModOne
             event.accept(ExtraBlocks.BLOCK_OF_SOUND);
             event.accept(ExtraItems.STRAWBERRY_FOOD);
             event.accept(ExtraItems.PINE_CONE_OBJECT);
+            event.accept(ExtraItems.STAFF_OF_SAPPHIRE);
         }
 
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
