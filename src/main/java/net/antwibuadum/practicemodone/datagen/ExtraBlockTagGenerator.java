@@ -38,8 +38,12 @@ public class ExtraBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ExtraBlocks.BLOCK_OF_SAPPHIRE.get());
 
-        this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
-                .add(ExtraBlocks.RAW_BLOCK_OF_SAPPHIRE.get())
+       this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(ExtraBlocks.RAW_BLOCK_OF_SAPPHIRE.get());
+
+        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
+
+        this.tag(TagsClass.Blocks.NEEDS_SAPPHIRE_TOOL)
                 .add(ExtraBlocks.BLOCK_OF_SOUND.get());
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
@@ -52,7 +56,6 @@ public class ExtraBlockTagGenerator extends BlockTagsProvider {
                         ExtraBlocks.BLOCK_OF_END_STONE_SAPPHIRE_ORE.get(),
                         ExtraBlocks.BLOCK_OF_SOUND.get()
                 );
-        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL);
 
 
         this.tag(BlockTags.FENCES)

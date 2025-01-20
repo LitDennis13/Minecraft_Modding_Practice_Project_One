@@ -6,6 +6,7 @@ import net.antwibuadum.practicemodone.items.ExtraItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -36,9 +37,67 @@ public class ExtraRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy(getHasName(ExtraItems.SAPPHIRE_OBJECT.get()), has(ExtraItems.SAPPHIRE_OBJECT.get()))
                 .save(consumer);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ExtraBlocks.RAW_BLOCK_OF_SAPPHIRE.get())
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("XXX")
+                .define('X', ExtraItems.RAW_SAPPHIRE_OBJECT.get())
+                .unlockedBy(getHasName(ExtraItems.RAW_SAPPHIRE_OBJECT.get()), has(ExtraItems.RAW_SAPPHIRE_OBJECT.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ExtraItems.SWORD_OF_SAPPHIRE.get())
+                .pattern(" X ")
+                .pattern(" X ")
+                .pattern(" S ")
+                .define('X', ExtraItems.SAPPHIRE_OBJECT.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ExtraItems.SAPPHIRE_OBJECT.get()), has(ExtraItems.SAPPHIRE_OBJECT.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ExtraItems.PICKAXE_OF_SAPPHIRE.get())
+                .pattern("XXX")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('X', ExtraItems.SAPPHIRE_OBJECT.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ExtraItems.SAPPHIRE_OBJECT.get()), has(ExtraItems.SAPPHIRE_OBJECT.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ExtraItems.AXE_OF_SAPPHIRE.get())
+                .pattern(" XX")
+                .pattern(" SX")
+                .pattern(" S ")
+                .define('X', ExtraItems.SAPPHIRE_OBJECT.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ExtraItems.SAPPHIRE_OBJECT.get()), has(ExtraItems.SAPPHIRE_OBJECT.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ExtraItems.SHOVEL_OF_SAPPHIRE.get())
+                .pattern(" X ")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('X', ExtraItems.SAPPHIRE_OBJECT.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ExtraItems.SAPPHIRE_OBJECT.get()), has(ExtraItems.SAPPHIRE_OBJECT.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ExtraItems.HOE_OF_SAPPHIRE.get())
+                .pattern(" XX")
+                .pattern(" S ")
+                .pattern(" S ")
+                .define('X', ExtraItems.SAPPHIRE_OBJECT.get())
+                .define('S', Items.STICK)
+                .unlockedBy(getHasName(ExtraItems.SAPPHIRE_OBJECT.get()), has(ExtraItems.SAPPHIRE_OBJECT.get()))
+                .save(consumer);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ExtraItems.SAPPHIRE_OBJECT.get(), 8)
                 .requires(ExtraBlocks.BLOCK_OF_SAPPHIRE.get())
                 .unlockedBy(getHasName(ExtraBlocks.BLOCK_OF_SAPPHIRE.get()), has(ExtraBlocks.BLOCK_OF_SAPPHIRE.get()))
+                .save(consumer);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ExtraItems.RAW_SAPPHIRE_OBJECT.get(), 8)
+                .requires(ExtraBlocks.RAW_BLOCK_OF_SAPPHIRE.get())
+                .unlockedBy(getHasName(ExtraBlocks.RAW_BLOCK_OF_SAPPHIRE.get()), has(ExtraBlocks.RAW_BLOCK_OF_SAPPHIRE.get()))
                 .save(consumer);
     }
 

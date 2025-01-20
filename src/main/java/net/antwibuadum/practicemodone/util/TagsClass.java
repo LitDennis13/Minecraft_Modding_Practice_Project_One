@@ -12,6 +12,7 @@ import net.minecraft.world.level.block.Block;
 public class TagsClass {
     public static class Blocks {
         public static final TagKey<Block> METAL_DETECTOR_NOTABLES = tag("metal_detector_notables");
+        public static final TagKey<Block> NEEDS_SAPPHIRE_TOOL = tag("needs_sapphire_tool");
 
 
         private static TagKey<Block> tag(String name) {

@@ -38,6 +38,11 @@ public class ExtraItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ExtraBlocks.PRESSURE_PLATE_OF_SAPPHIRE);
         evenSimplerBlockItem(ExtraBlocks.FENCE_GATE_OF_SAPPHIRE);
 
+        handheldItem(ExtraItems.SWORD_OF_SAPPHIRE);
+        handheldItem(ExtraItems.PICKAXE_OF_SAPPHIRE);
+        handheldItem(ExtraItems.AXE_OF_SAPPHIRE);
+        handheldItem(ExtraItems.SHOVEL_OF_SAPPHIRE);
+        handheldItem(ExtraItems.HOE_OF_SAPPHIRE);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
@@ -75,5 +80,11 @@ public class ExtraItemModelProvider extends ItemModelProvider {
     public void wallItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/wall_inventory"))
                 .texture("wall", new ResourceLocation(PracticeModOne.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(PracticeModOne.MOD_ID, "item/" + item.getId().getPath()));
     }
 }

@@ -84,6 +84,11 @@ public class PracticeModOne
             event.accept(ExtraItems.STRAWBERRY_FOOD);
             event.accept(ExtraItems.PINE_CONE_OBJECT);
             event.accept(ExtraItems.STAFF_OF_SAPPHIRE);
+            event.accept(ExtraItems.SWORD_OF_SAPPHIRE);
+            event.accept(ExtraItems.PICKAXE_OF_SAPPHIRE);
+            event.accept(ExtraItems.AXE_OF_SAPPHIRE);
+            event.accept(ExtraItems.SHOVEL_OF_SAPPHIRE);
+            event.accept(ExtraItems.HOE_OF_SAPPHIRE);
         }
 
         if (event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {

@@ -41,6 +41,11 @@ public class ExtraCreativeModeTabs {
                         pOutput.accept(ExtraItems.STRAWBERRY_FOOD.get());
                         pOutput.accept(ExtraItems.PINE_CONE_OBJECT.get());
                         pOutput.accept(ExtraItems.STAFF_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraItems.SWORD_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraItems.PICKAXE_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraItems.AXE_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraItems.SHOVEL_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraItems.HOE_OF_SAPPHIRE.get());
 
 
 

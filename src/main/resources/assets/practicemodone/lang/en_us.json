@@ -7,6 +7,12 @@
   "item.practicemodone.pine_cone": "Pine Cone",
   "item.practicemodone.staff_of_sapphire": "Staff of Sapphire",
 
+  "item.practicemodone.sword_of_sapphire": "Sword of Sapphire",
+  "item.practicemodone.pickaxe_of_sapphire": "Pickaxe of Sapphire",
+  "item.practicemodone.axe_of_sapphire": "Axe of Sapphire",
+  "item.practicemodone.shovel_of_sapphire": "Shovel of Sapphire",
+  "item.practicemodone.hoe_of_sapphire": "How of Sapphire",
+
   "tooltip.practicemodone.metal_detector.tooltip": "Detects Metals and Sapphire Ore's",
   "tooltip.practicemodone.block_of_sound.tooltip": "Plays Anvil Hitting the ground sound",
 
