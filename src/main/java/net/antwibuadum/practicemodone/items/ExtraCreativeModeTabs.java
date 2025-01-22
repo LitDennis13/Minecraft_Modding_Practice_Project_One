@@ -46,7 +46,10 @@ public class ExtraCreativeModeTabs {
                         pOutput.accept(ExtraItems.AXE_OF_SAPPHIRE.get());
                         pOutput.accept(ExtraItems.SHOVEL_OF_SAPPHIRE.get());
                         pOutput.accept(ExtraItems.HOE_OF_SAPPHIRE.get());
-
+                        pOutput.accept(ExtraItems.HELMUT_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraItems.CHESTPLATE_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraItems.LEGGINGS_OF_SAPPHIRE.get());
+                        pOutput.accept(ExtraItems.BOOTS_OF_SAPPHIRE.get());
 
 
                         // Vanilla Items

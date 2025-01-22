@@ -39,6 +39,15 @@ public class ExtraItems {
     public static final RegistryObject<Item> HOE_OF_SAPPHIRE = EXTRA_ITEMS.register("hoe_of_sapphire",
             () -> new HoeItem(NewToolTiers.SAPPHIRE_TIER, 0, 0, new Item.Properties()));
 
+    public static final RegistryObject<Item> HELMUT_OF_SAPPHIRE = EXTRA_ITEMS.register("helmut_of_sapphire",
+            () -> new ArmorItem(ExtraArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET, new Item.Properties()));
+    public static final RegistryObject<Item> CHESTPLATE_OF_SAPPHIRE = EXTRA_ITEMS.register("chestplate_of_sapphire",
+            () -> new ArmorItem(ExtraArmorMaterials.SAPPHIRE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+    public static final RegistryObject<Item> LEGGINGS_OF_SAPPHIRE = EXTRA_ITEMS.register("leggings_of_sapphire",
+            () -> new ArmorItem(ExtraArmorMaterials.SAPPHIRE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+    public static final RegistryObject<Item> BOOTS_OF_SAPPHIRE = EXTRA_ITEMS.register("boots_of_sapphire",
+            () -> new ArmorItem(ExtraArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
 
     public static void register(IEventBus eventBus) {
         EXTRA_ITEMS.register(eventBus);

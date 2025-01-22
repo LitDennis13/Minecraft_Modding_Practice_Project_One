@@ -90,6 +90,38 @@ public class ExtraRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy(getHasName(ExtraItems.SAPPHIRE_OBJECT.get()), has(ExtraItems.SAPPHIRE_OBJECT.get()))
                 .save(consumer);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ExtraItems.HELMUT_OF_SAPPHIRE.get())
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("   ")
+                .define('X', ExtraItems.SAPPHIRE_OBJECT.get())
+                .unlockedBy(getHasName(ExtraItems.SAPPHIRE_OBJECT.get()), has(ExtraItems.SAPPHIRE_OBJECT.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ExtraItems.CHESTPLATE_OF_SAPPHIRE.get())
+                .pattern("X X")
+                .pattern("XXX")
+                .pattern("XXX")
+                .define('X', ExtraItems.SAPPHIRE_OBJECT.get())
+                .unlockedBy(getHasName(ExtraItems.SAPPHIRE_OBJECT.get()), has(ExtraItems.SAPPHIRE_OBJECT.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ExtraItems.LEGGINGS_OF_SAPPHIRE.get())
+                .pattern("XXX")
+                .pattern("X X")
+                .pattern("X X")
+                .define('X', ExtraItems.SAPPHIRE_OBJECT.get())
+                .unlockedBy(getHasName(ExtraItems.SAPPHIRE_OBJECT.get()), has(ExtraItems.SAPPHIRE_OBJECT.get()))
+                .save(consumer);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ExtraItems.BOOTS_OF_SAPPHIRE.get())
+                .pattern("X X")
+                .pattern("X X")
+                .pattern("   ")
+                .define('X', ExtraItems.SAPPHIRE_OBJECT.get())
+                .unlockedBy(getHasName(ExtraItems.SAPPHIRE_OBJECT.get()), has(ExtraItems.SAPPHIRE_OBJECT.get()))
+                .save(consumer);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ExtraItems.SAPPHIRE_OBJECT.get(), 8)
                 .requires(ExtraBlocks.BLOCK_OF_SAPPHIRE.get())
                 .unlockedBy(getHasName(ExtraBlocks.BLOCK_OF_SAPPHIRE.get()), has(ExtraBlocks.BLOCK_OF_SAPPHIRE.get()))
