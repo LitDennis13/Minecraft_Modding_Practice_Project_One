@@ -1,6 +1,7 @@
 package net.antwibuadum.practicemodone.items;
 
 import net.antwibuadum.practicemodone.PracticeModOne;
+import net.antwibuadum.practicemodone.items.functional.ExtraArmorItem;
 import net.antwibuadum.practicemodone.items.functional.FuelItem;
 import net.antwibuadum.practicemodone.items.functional.MetalDetectorItem;
 import net.minecraft.world.item.*;
@@ -40,7 +41,7 @@ public class ExtraItems {
             () -> new HoeItem(NewToolTiers.SAPPHIRE_TIER, 0, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> HELMUT_OF_SAPPHIRE = EXTRA_ITEMS.register("helmut_of_sapphire",
-            () -> new ArmorItem(ExtraArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new ExtraArmorItem(ExtraArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET, new Item.Properties()));
     public static final RegistryObject<Item> CHESTPLATE_OF_SAPPHIRE = EXTRA_ITEMS.register("chestplate_of_sapphire",
             () -> new ArmorItem(ExtraArmorMaterials.SAPPHIRE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
     public static final RegistryObject<Item> LEGGINGS_OF_SAPPHIRE = EXTRA_ITEMS.register("leggings_of_sapphire",
